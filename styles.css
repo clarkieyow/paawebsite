@@ -1,0 +1,480 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header {
+    background-color: #004d99;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 260px; /* Adjust this based on your logo size */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+nav ul li a:hover {
+    color: #ffb81c;
+}
+
+/* Junior and Senior High Section Image */
+.junior-high .collage-item,
+.senior-high .collage-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.junior-high img,
+.senior-high img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Photo Collage Grid Layout */
+.photo-collage .collage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.photo-collage .collage-item {
+    position: relative;
+}
+
+.photo-collage img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo-collage img:hover {
+    transform: scale(1.05);
+}
+
+/* Section Styles */ 
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h1, section h2 {
+    font-size: 36px;
+    color: #004d99;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    color: #666;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+section ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+/* Academics Section */
+.academics {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.academics h1 {
+    font-size: 36px;
+    color: #004d99;
+    margin-bottom: 20px;
+}
+
+.academics p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.academics h2 {
+    font-size: 30px;
+    margin-top: 40px;
+    color: #004d99;
+    margin-bottom: 20px;
+}
+
+/* Program Grid Layout */
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.program-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.program-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.program-item h3 {
+    font-size: 24px;
+    color: #004d99;
+    margin-bottom: 10px;
+}
+
+.program-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+.program-item:hover {
+    transform: translateY(-10px);
+} /* Tuition & Fees Section */
+.tuition-fees {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.tuition-fees h1 {
+    font-size: 36px;
+    color: #004d99;
+    margin-bottom: 20px;
+}
+
+.tuition-fees p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tuition-fees h2 {
+    font-size: 30px;
+    margin-top: 40px;
+    color: #004d99;
+    margin-bottom: 20px;
+}
+
+.tuition-fees ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tuition-fees ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Fee Cards Section */
+.fee-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.fee-card {
+    background-color: #d3d3d3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.fee-card h3 {
+    font-size: 24px;
+    color: #004d99;
+    margin-bottom: 10px;
+}
+
+.fee-card p {
+    font-size: 18px;
+    color: #555;
+}
+
+.fee-card:hover {
+    transform: translateY(-10px);
+}
+/* Contact Us Section */
+.contact-us {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-us h1 {
+    font-size: 36px;
+    color: #004d99;
+    margin-bottom: 20px;
+}
+
+.contact-us p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contact Form */
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #004d99;
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #ffb81c;
+}
+
+/* Contact Details Section */
+.contact-details {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact-details h2 {
+    font-size: 30px;
+    color: #004d99;
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    font-size: 18px;
+    color: #666;
+}
+
+.contact-details a {
+    color: #004d99;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+ /* Style the map container */
+        #map {
+            height: 400px;
+            width: 100%;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+}
+
+.map iframe {
+    border-radius: 10px;
+}
+.banner {
+    background: url('campus-image.jpg') no-repeat center center/cover;
+    height: 600px;
+    color: #00008b;
+    text-align: center;
+    padding-top: 180px;
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin-bottom: 0px;
+}
+
+.banner p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #0066cc;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Junior High Section */
+.junior-high {
+    background-color: #e0e0e0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.junior-high h2 {
+    font-size: 36px;
+    color: #004d99;
+}
+
+.junior-high p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.learn-more {
+    font-size: 18px;
+    text-decoration: none;
+    color: #004d99;
+    border-bottom: 2px solid #004d99;
+}
+
+.learn-more:hover {
+    color: #ffb81c;
+    border-color: #ffb81c;
+}
+
+/* Senior High Section */
+.senior-high {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.senior-high h2 {
+    font-size: 36px;
+    color: #004d99;
+}
+
+.senior-high p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.learn-more {
+    font-size: 18px;
+    text-decoration: none;
+    color: #004d99;
+    border-bottom: 2px solid #004d99;
+}
+
+.learn-more:hover {
+    color: #ffb81c;
+    border-color: #ffb81c;
+}
+
+/* Photo Collage Section */
+.photo-collage {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.photo-collage h2 {
+    font-size: 36px;
+    color: #004d99;
+    margin-bottom: 20px;
+}
+
+.collage-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.collage-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.collage-item img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #004d99;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,35 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get the form inputs
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $subject = htmlspecialchars($_POST['subject']);
+    $message = htmlspecialchars($_POST['message']);
+
+    // Email recipient
+    $to = "clarkposadas2@gmail.com"; // Your email
+    $subject = "New Message from Contact Us Form: " . $subject;
+    $body = "
+        <h2>Message Details</h2>
+        <p><strong>Name:</strong> $name</p>
+        <p><strong>Email:</strong> $email</p>
+        <p><strong>Subject:</strong> $subject</p>
+        <p><strong>Message:</strong> $message</p>
+    ";
+
+    // To send HTML mail, the Content-type header must be set
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-Type:text/html;charset=UTF-8" . "\r\n";
+
+    // Additional headers
+    $headers .= "From: <$email>" . "\r\n";
+    $headers .= "Reply-To: $email" . "\r\n";
+
+    // Send email
+    if (mail($to, $subject, $body, $headers)) {
+        echo "Message sent successfully.";
+    } else {
+        echo "Error sending message.";
+    }
+}
+?>
