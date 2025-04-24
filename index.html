@@ -7,14 +7,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
 <!-- Header Section -->
 <header>
     <div class="logo">
-	<a href="index.html" target="_blank">
-        <img src="logo.jpg.jpg" alt="Palawan Adventist Academy Logo">  
+        <a href="index.html" target="_blank">
+            <img src="logo.jpg.jpg" alt="Palawan Adventist Academy Logo">
+        </a>
     </div>
-       <nav>
+    <!-- Burger Menu Button (Only Visible on Mobile) -->
+    <div class="burger-menu" id="burger-menu">
+        <div class="burger"></div>
+        <div class="burger"></div>
+        <div class="burger"></div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav id="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
@@ -24,7 +32,6 @@
         </ul>
     </nav>
 </header>
-
 <!-- Main Banner -->
 <section class="banner">
     <div class="banner-content">
@@ -36,25 +43,25 @@
 
 <!-- Junior High Section -->
 <section class="junior-high">
- <div class="collage-item">
-            <img src="junior.jpg" alt="junior">
-        </div>
     <div class="section-content">
         <h2>Junior High</h2>
         <p>Our Junior High program is designed to build a strong academic and spiritual foundation. We focus on academic excellence, character development, and leadership skills.</p>
         <a href="junior-high.html" class="learn-more">Learn More</a>
     </div>
+    <div class="collage-item">
+        <img src="junior.jpg" alt="junior">
+    </div>
 </section>
 
 <!-- Senior High Section -->
 <section class="senior-high">
-<div class="collage-item">
-            <img src="senior.jpg" alt="senior">
-        </div>
     <div class="section-content">
         <h2>Senior High</h2>
         <p>Our Senior High program prepares students for higher education and the workforce with specialized tracks, including STEM, Business, and Arts & Design.</p>
         <a href="senior-high.html" class="learn-more">Learn More</a>
+    </div>
+    <div class="collage-item">
+        <img src="senior.jpg" alt="senior">
     </div>
 </section>
 
@@ -77,6 +84,8 @@
     </div>
 </section>
 
+}
+			
 <!-- Footer -->
 <footer>
     <div class="footer-content">
