@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuition & Fees | Palawan Adventist Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <div class="logo">
+        <a href="index.html" target="">
+            <img src="logo.jpg.jpg" alt="Palawan Adventist Academy Logo">
+        </a>
+    </div>
+    <!-- Burger Menu Button (Only Visible on Mobile) -->
+    <div class="burger-menu" id="burger-menu">
+        <div class="burger"></div>
+        <div class="burger"></div>
+        <div class="burger"></div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+        <h2>Enrollment Application Form</h2>
+
+        <form action="https://formspree.io/f/xovdqrdb" method="POST" enctype="multipart/form-data">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="grade">Grade Level:</label>
+            <select id="grade" name="grade" required>
+                <option value="junior-high">Junior High</option>
+                <option value="senior-high">Senior High</option>
+            </select>
+
+            <label for="guardian-name">Parent/Guardian Name:</label>
+            <input type="text" id="guardian-name" name="guardian-name" placeholder="Enter parent's or guardian's name" required>
+
+            <label for="contact">Guardian's Contact Number:</label>
+            <input type="text" id="contact" name="contact" placeholder="Enter contact number" required>
+
+            <label for="address">Home Address:</label>
+            <textarea id="address" name="address" rows="4" placeholder="Enter your address" required></textarea>
+
+            <!-- File Upload Section -->
+            <label for="documents">Upload Documents (e.g., Birth Certificate, Report Card):</label>
+            <input type="file" id="documents" name="documents" accept=".pdf,.doc,.docx,.jpg,.png" >
+
+            <button type="submit">Submit Application</button>
+        </form>
+
+     <!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Palawan Adventist Academy. All rights reserved.</p>
+        <p>Follow us: 
+            <a href="https://facebook.com/paacademy" target="_blank">Facebook</a>
+        </p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
